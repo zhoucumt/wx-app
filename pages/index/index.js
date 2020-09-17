@@ -7,7 +7,15 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    count: 1
+  },
+  // 点击事件
+  clickMe: function() {
+    console.log('clicked', this.data.count);
+    let num = 0;
+    num = this.data.count + 1;
+    this.setData({ count: num })
   },
   //事件处理函数
   bindViewTap: function() {
