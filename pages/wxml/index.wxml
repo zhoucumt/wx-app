@@ -1,2 +1,19 @@
 <!--pages/wxml/index.wxml-->
 <text>当前时间：{{time}}</text>
+<text data-test="{{test}}"> hello {{test}}</text>
+<view>{{var1}}</view>
+<view>{{var2}}</view>
+<view>{{var3}}</view>
+<view>{{var4}}</view>
+
+<!-- 根据 a 的值是否等于 10 在页面输出不同的内容 -->
+<text>{{ a === 10? "变量 a 等于10": "变量 a 不等于10"}}</text>
+
+<view wx:if="{{length > 5}}"> 1 </view>
+<view wx:elif="{{length > 2}}"> 2 </view>
+<view wx:else> 3 </view>
+
+<!-- 循环 -->
+<view wx:for="{{array}}">
+  {{index}}: {{item.message}}
+</view>

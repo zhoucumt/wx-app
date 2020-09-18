@@ -5,7 +5,17 @@ Page({
    * 页面的初始数据
    */
   data: {
-    time: (new Date()).toString()
+    time: (new Date()).toString(),
+    test: 'test2',
+    var2: undefined,
+    var3: null,
+    var4: "var4",
+
+    array: [{
+      message: 'foo',
+    }, {
+      message: 'bar'
+    }]
   },
 
   /**
