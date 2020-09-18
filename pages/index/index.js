@@ -15,7 +15,7 @@ Page({
     console.log('clicked', this.data.count);
     let num = 0;
     num = this.data.count + 1;
-    this.setData({ count: num })
+    this.setData({ count: this.data.count + 1 })
   },
   //事件处理函数
   bindViewTap: function() {
